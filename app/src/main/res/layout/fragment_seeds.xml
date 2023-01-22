@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="50dp"
+    android:scrollbarDefaultDelayBeforeFade="200"
+    android:scrollbarSize="4dp"
+    android:scrollbarStyle="outsideInset"
+    android:scrollbarThumbHorizontal="@android:color/white"
+    android:scrollbarThumbVertical="@android:color/white"
+    android:background="@drawable/gradient" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ui.calculator.SeedsFragment"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/seed1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="200dp"
+            android:layout_marginRight="200dp"
+            android:text="Seed 1:"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/seed2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Seed 2:"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/seed1"
+            app:layout_constraintTop_toBottomOf="@+id/seed1" />
+
+        <TextView
+            android:id="@+id/seed3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Seed 3:"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/seed2"
+            app:layout_constraintTop_toBottomOf="@+id/seed2" />
+
+        <TextView
+            android:id="@+id/seed4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Seed 4:"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/seed3"
+            app:layout_constraintTop_toBottomOf="@+id/seed3" />
+
+        <TextView
+            android:id="@+id/seed5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Seed 5:"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/seed4"
+            app:layout_constraintTop_toBottomOf="@+id/seed4" />
+
+        <TextView
+            android:id="@+id/seed6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Seed 6:"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/seed5"
+            app:layout_constraintTop_toBottomOf="@+id/seed5" />
+
+        <TextView
+            android:id="@+id/seed7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Seed 7:"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/seed6"
+            app:layout_constraintTop_toBottomOf="@+id/seed6" />
+
+        <TextView
+            android:id="@+id/seed8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Seed 8:"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/seed7"
+            app:layout_constraintTop_toBottomOf="@+id/seed7" />
+
+        <TextView
+            android:id="@+id/seed9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Seed 9:"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/seed8"
+            app:layout_constraintTop_toBottomOf="@+id/seed8" />
+
+        <TextView
+            android:id="@+id/seed10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Seed 10:"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/seed9"
+            app:layout_constraintTop_toBottomOf="@+id/seed9" />
+
+        <EditText
+            android:id="@+id/seed1_editText"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:background="@android:color/transparent"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#939393"
+            android:hint="Input lbs/acre"
+            android:inputType="numberDecimal"
+            app:layout_constraintBottom_toBottomOf="@+id/seed1"
+            app:layout_constraintStart_toEndOf="@+id/seed1"
+            app:layout_constraintTop_toTopOf="@+id/seed1" />
+
+        <EditText
+            android:id="@+id/seed2_editText"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#939393"
+            android:hint="Input lbs/acre"
+            android:inputType="numberDecimal"
+            app:layout_constraintBottom_toBottomOf="@+id/seed2"
+            app:layout_constraintStart_toStartOf="@+id/seed1_editText"
+            app:layout_constraintTop_toTopOf="@+id/seed2" />
+
+        <EditText
+            android:id="@+id/seed3_editText"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#939393"
+            android:hint="Input lbs/acre"
+            android:inputType="numberDecimal"
+            app:layout_constraintBottom_toBottomOf="@+id/seed3"
+            app:layout_constraintStart_toStartOf="@+id/seed2_editText"
+            app:layout_constraintTop_toTopOf="@+id/seed3" />
+
+        <EditText
+            android:id="@+id/seed4_editText"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#939393"
+            android:hint="Input lbs/acre"
+            android:inputType="numberDecimal"
+            app:layout_constraintBottom_toBottomOf="@+id/seed4"
+            app:layout_constraintStart_toStartOf="@+id/seed3_editText"
+            app:layout_constraintTop_toTopOf="@+id/seed4" />
+
+        <EditText
+            android:id="@+id/seed5_editText"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#939393"
+            android:hint="Input lbs/acre"
+            android:inputType="numberDecimal"
+            app:layout_constraintBottom_toBottomOf="@+id/seed5"
+            app:layout_constraintStart_toStartOf="@+id/seed4_editText"
+            app:layout_constraintTop_toTopOf="@+id/seed5" />
+
+        <EditText
+            android:id="@+id/seed6_editText"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#939393"
+            android:hint="Input lbs/acre"
+            android:inputType="numberDecimal"
+            app:layout_constraintBottom_toBottomOf="@+id/seed6"
+            app:layout_constraintStart_toStartOf="@+id/seed5_editText"
+            app:layout_constraintTop_toTopOf="@+id/seed6" />
+
+        <EditText
+            android:id="@+id/seed7_editText"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#939393"
+            android:hint="Input lbs/acre"
+            android:inputType="numberDecimal"
+            app:layout_constraintBottom_toBottomOf="@+id/seed7"
+            app:layout_constraintStart_toStartOf="@+id/seed6_editText"
+            app:layout_constraintTop_toTopOf="@+id/seed7" />
+
+        <EditText
+            android:id="@+id/seed8_editText"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#939393"
+            android:hint="Input lbs/acre"
+            android:inputType="numberDecimal"
+            app:layout_constraintBottom_toBottomOf="@+id/seed8"
+            app:layout_constraintStart_toStartOf="@+id/seed7_editText"
+            app:layout_constraintTop_toTopOf="@+id/seed8" />
+
+        <EditText
+            android:id="@+id/seed9_editText"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#939393"
+            android:hint="Input lbs/acre"
+            android:inputType="numberDecimal"
+            app:layout_constraintBottom_toBottomOf="@+id/seed9"
+            app:layout_constraintStart_toStartOf="@+id/seed8_editText"
+            app:layout_constraintTop_toTopOf="@+id/seed9" />
+
+        <EditText
+            android:id="@+id/seed10_editText"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#939393"
+            android:hint="Input lbs/acre"
+            android:inputType="numberDecimal"
+            app:layout_constraintBottom_toBottomOf="@+id/seed10"
+            app:layout_constraintStart_toStartOf="@+id/seed9_editText"
+            app:layout_constraintTop_toTopOf="@+id/seed10" />
+
+        <Button
+            android:id="@+id/saveSettings"
+            android:layout_width="150dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="32dp"
+            android:gravity="center_horizontal"
+            android:text="@string/save"
+            android:textSize="18sp"
+            app:backgroundTint="#155775"
+            app:layout_constraintEnd_toStartOf="@+id/defaultSettings"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/seed10_editText" />
+
+        <Button
+            android:id="@+id/defaultSettings"
+            android:layout_width="150dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"
+            android:text="@string/Default"
+            android:textSize="18sp"
+            app:backgroundTint="#155775"
+            app:layout_constraintBottom_toBottomOf="@+id/saveSettings"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/saveSettings" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

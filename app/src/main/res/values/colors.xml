@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="dark_electric_blue">#63707E</color>
+    <color name="jet">#292929</color>
+    <color name="jetTransparent">#50292929</color>
+    <color name="carolinaBlue">#3F9BD9</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray">#888888</color>
+    <color name="transparent">#01FFFFFF</color>
+    <color name="semi_transparent">#30FFFFFF</color>
+</resources>

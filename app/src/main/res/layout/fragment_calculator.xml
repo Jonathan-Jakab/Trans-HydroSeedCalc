@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="50dp"
+    android:scrollbarDefaultDelayBeforeFade="200"
+    android:scrollbarSize="4dp"
+    android:scrollbarStyle="outsideInset"
+    android:scrollbarThumbHorizontal="@android:color/white"
+    android:scrollbarThumbVertical="@android:color/white"
+    android:background="@drawable/gradient" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.calculator.CalculatorFragment">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="55dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="250dp"
+            android:layout_marginRight="250dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icon_acres" />
+
+        <TextView
+            android:id="@+id/UnitsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+
+            android:textColor="#FFFFFF"
+            android:textColorHint="#888888"
+            android:textSize="22sp"
+            app:layout_constraintStart_toEndOf="@+id/inAcre"
+            app:layout_constraintTop_toTopOf="@+id/inAcre" />
+
+        <EditText
+            android:id="@+id/inAcre"
+            android:layout_width="128dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#939393"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="57dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="250dp"
+            android:layout_marginRight="250dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2"
+            app:srcCompat="@drawable/seedling_01_512"
+            app:tint="#ECECEC" />
+
+        <TextView
+            android:id="@+id/LBSTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/inches"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#000000"
+            android:textSize="22sp"
+            app:layout_constraintStart_toEndOf="@+id/inLBS"
+            app:layout_constraintTop_toTopOf="@+id/inLBS" />
+
+        <EditText
+            android:id="@+id/inLBS"
+            android:layout_width="128dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:hint="@string/mulchApplicationHint"
+            android:inputType="numberDecimal"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#939393"
+            app:layout_constraintStart_toEndOf="@+id/imageView3"
+            app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+        <Button
+            android:id="@+id/calculate"
+            android:layout_width="237dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/calculate"
+            android:textSize="18sp"
+            app:backgroundTint="#155775"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inLBS" />
+
+        <Button
+            android:id="@+id/buttonPrompt"
+            android:layout_width="192dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/saveCalcResults"
+            android:textSize="18sp"
+            app:backgroundTint="#154775"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/calculate" />
+
+
+        <TextView
+            android:id="@+id/compostResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColor="#E1E1E1"
+            app:layout_constraintHeight_percent="0.80"
+            app:layout_constraintStart_toStartOf="@+id/imageView3"
+            app:layout_constraintTop_toBottomOf="@+id/buttonPrompt" />
+
+        <TextView
+            android:id="@+id/fertilizerResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="#E1E1E1"
+            app:layout_constraintStart_toStartOf="@+id/seedResult"
+            app:layout_constraintTop_toBottomOf="@+id/seedResult" />
+
+        <TextView
+            android:id="@+id/seedResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="#E1E1E1"
+            app:layout_constraintStart_toStartOf="@+id/compostResult"
+            app:layout_constraintTop_toBottomOf="@+id/compostResult" />
+
+        <TextView
+            android:id="@+id/waterTruckResults"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="#E1E1E1"
+            app:layout_constraintStart_toStartOf="@+id/hsFiberResult"
+            app:layout_constraintTop_toBottomOf="@+id/hsFiberResult" />
+
+        <TextView
+            android:id="@+id/hsFiberResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="#E1E1E1"
+            app:layout_constraintStart_toStartOf="@+id/fertilizerResult"
+            app:layout_constraintTop_toBottomOf="@+id/fertilizerResult" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

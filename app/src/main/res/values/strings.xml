@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">CalTransCalc</string>
+
+    <string name="title_seeds">Seeds</string>
+    <string name="title_calculator">Calculator</string>
+    <string name="title_logs">Logs</string>
+    <string name="title_settings">Settings</string>
+
+
+    <string name="calculate">Calculate</string>
+    <string name="close">Close</string>
+    <string name="save">Save</string>
+    <string name="Default">Default</string>
+
+    <string name="appRateCompost">Compost \nApplication \nRate</string>
+    <string name="appRateSeed">Seed \nApplication \nRate</string>
+    <string name="appRateFertilizer">Fertilizer \nApplication \nRate</string>
+    <string name="appRateHydroseed">Hydromulch \nApplication \nRate</string>
+    <string name="mulchMixingRate">Mixing Ratio</string>
+    <string name="mulchMixingRateHint">mulch : water</string>
+    <string name="unitsInput">Units</string>
+    <string name="waterTankSize">Truck \nTank \nSize</string>
+    <string name="saveCalcResults">Save Results</string>
+    <string name="customSeedMix">Custom\nMix</string>
+
+    <string name="fifteen">1,500 gal</string>
+    <string name="thirty">3,000 gal</string>
+
+    <string name="acres">acres</string>
+    <string name="acresHint">Input acres</string>
+    <string name="mulchApplicationHint">Input lbs/acre</string>
+    <string name="sqft">sqft</string>
+    <string name="sqftHint">Input Ft<sup>2</sup></string>
+    <string name="inches">lbs/acre</string>
+</resources>

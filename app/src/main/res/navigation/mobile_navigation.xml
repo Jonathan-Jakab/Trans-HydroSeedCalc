@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_calculator" >
+
+    <fragment
+        android:id="@+id/navigation_seeds"
+        android:name="com.example.caltranscalc.ui.seeds.SeedsFragment"
+        android:label="@string/title_seeds"
+        tools:layout="@layout/fragment_seeds" />
+
+    <fragment
+        android:id="@+id/navigation_calculator"
+        android:name="com.example.caltranscalc.ui.calculator.CalculatorFragment"
+        android:label="@string/title_calculator"
+        tools:layout="@layout/fragment_calculator" />
+
+    <fragment
+        android:id="@+id/navigation_logs"
+        android:name="com.example.caltranscalc.ui.logs.LogsFragment"
+        android:label="@string/title_logs"
+        tools:layout="@layout/fragment_logs" />
+
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="com.example.caltranscalc.ui.settings.SettingsFragment"
+        android:label="@string/title_settings"
+        tools:layout="@layout/fragment_settings" />
+</navigation>

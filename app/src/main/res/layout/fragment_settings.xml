@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="50dp"
+    android:scrollbarDefaultDelayBeforeFade="200"
+    android:scrollbarSize="4dp"
+    android:scrollbarStyle="outsideInset"
+    android:scrollbarThumbHorizontal="@android:color/white"
+    android:scrollbarThumbVertical="@android:color/white"
+    android:background="@drawable/gradient">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.settings.SettingsFragment">
+
+
+        <TextView
+            android:id="@+id/text_settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="center_horizontal"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.896" />
+
+        <TextView
+            android:id="@+id/AppRateCompTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="250dp"
+            android:layout_marginRight="250dp"
+            android:text="@string/appRateCompost"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#888888"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/inAppRateCompost"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginBottom="14dp"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:hint="Input cy/acre"
+            android:inputType="numberDecimal"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#939393"
+            app:layout_constraintBottom_toBottomOf="@+id/AppRateCompTextView"
+            app:layout_constraintStart_toEndOf="@+id/AppRateCompTextView" />
+
+        <TextView
+            android:id="@+id/AppRateFertTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/appRateFertilizer"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#888888"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/AppRateCompTextView"
+            app:layout_constraintTop_toBottomOf="@+id/AppRateCompTextView" />
+
+        <EditText
+            android:id="@+id/inAppRateFertilizer"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="14dp"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:hint="Input lbs/acre"
+            android:inputType="numberDecimal"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#939393"
+            app:layout_constraintBottom_toBottomOf="@+id/AppRateFertTextView"
+            app:layout_constraintStart_toStartOf="@+id/inAppRateCompost" />
+
+        <TextView
+            android:id="@+id/AppRateSeedTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/appRateSeed"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#888888"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/AppRateFertTextView"
+            app:layout_constraintTop_toBottomOf="@+id/AppRateFertTextView" />
+
+        <EditText
+            android:id="@+id/inAppRateSeed"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="14dp"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:hint="Input lbs/acres"
+            android:inputType="numberDecimal"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#939393"
+            app:layout_constraintBottom_toBottomOf="@+id/AppRateSeedTextView"
+            app:layout_constraintStart_toStartOf="@+id/inAppRateFertilizer" />
+
+        <EditText
+            android:id="@+id/mulchMixingRateInput"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:hint="m"
+            android:inputType="text"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#88888888"
+            app:layout_constraintEnd_toStartOf="@+id/colon"
+            app:layout_constraintTop_toBottomOf="@+id/tankSizeOption" />
+
+        <EditText
+            android:id="@+id/waterMixingRateInput"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:hint="w"
+            android:inputType="text"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#88888888"
+            app:layout_constraintStart_toEndOf="@+id/colon"
+            app:layout_constraintTop_toBottomOf="@+id/tankSizeOption" />
+
+        <TextView
+            android:id="@+id/calcUnitsInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/unitsInput"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/AppRateSeedTextView"
+            app:layout_constraintTop_toBottomOf="@+id/AppRateSeedTextView" />
+
+        <RadioGroup
+            android:id="@+id/unitsSelect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@+id/inAppRateSeed"
+            app:layout_constraintStart_toStartOf="@+id/inAppRateSeed"
+            app:layout_constraintTop_toBottomOf="@+id/inAppRateSeed">
+
+            <RadioButton
+                android:id="@+id/sqftSelect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="-1"
+                android:background="@drawable/radio_button_sqft_selector"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/sqft"
+                android:textColor="@drawable/selector" />
+
+            <RadioButton
+                android:id="@+id/acresSelect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="-1"
+                android:background="@drawable/radio_button_acres_selector"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/acres"
+                android:textColor="@drawable/selector" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/saveSettings"
+            android:layout_width="150dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/save"
+            android:textSize="18sp"
+            app:backgroundTint="#155775"
+            app:layout_constraintEnd_toStartOf="@+id/defaultSettings"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mulchMixingRateHint" />
+
+        <Button
+            android:id="@+id/defaultSettings"
+            android:layout_width="150dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"
+            android:text="@string/Default"
+            android:textSize="18sp"
+            app:backgroundTint="#155775"
+            app:layout_constraintBottom_toBottomOf="@+id/saveSettings"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/saveSettings" />
+
+        <TextView
+            android:id="@+id/TruckTankSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/waterTankSize"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/calcUnitsInput"
+            app:layout_constraintTop_toBottomOf="@+id/calcUnitsInput" />
+
+        <TextView
+            android:id="@+id/mulchMixingRateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/mulchMixingRate"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/TruckTankSize"
+            app:layout_constraintTop_toBottomOf="@+id/TruckTankSize" />
+
+        <RadioGroup
+            android:id="@+id/tankSizeOption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/inAppRateSeed"
+            app:layout_constraintTop_toTopOf="@+id/TruckTankSize">
+
+            <RadioButton
+                android:id="@+id/thirtyButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/carolinaBlue"
+                android:text="@string/thirty"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/fifteenButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/carolinaBlue"
+                android:text="@string/fifteen"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/mulchMixingRateHint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/mulchMixingRateHint"
+            android:textColor="#888888"
+            app:layout_constraintEnd_toEndOf="@+id/mulchMixingRateTextView"
+            app:layout_constraintStart_toStartOf="@+id/mulchMixingRateTextView"
+            app:layout_constraintTop_toBottomOf="@+id/mulchMixingRateTextView" />
+
+        <TextView
+            android:id="@+id/colon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text=":"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/tankSizeOption"
+            app:layout_constraintStart_toStartOf="@+id/tankSizeOption"
+            app:layout_constraintTop_toBottomOf="@+id/tankSizeOption" />
+
+        <Switch
+            android:id="@+id/customSeedSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/inAppRateSeed"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/inAppRateSeed"
+            app:layout_constraintTop_toTopOf="@+id/inAppRateSeed" />
+
+        <TextView
+            android:id="@+id/customMixTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:text="@string/customSeedMix"
+            android:textColor="#888888"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@+id/customSeedSwitch"
+            app:layout_constraintEnd_toEndOf="@+id/customSeedSwitch"
+            app:layout_constraintStart_toStartOf="@+id/customSeedSwitch" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
